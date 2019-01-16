@@ -66,23 +66,25 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg bg-white">
         <div class="container">
-            <!-- Navbar logo -->
-            <a class="navbar-brand" href="/">
-                <img src="/img/nav_logo.png" alt="Razex.de" height="50px" />
-            </a>
+            <div class="navbar-translate">
+                <!-- Navbar logo -->
+                <a class="navbar-brand" href="/">
+                    Razex.de
+                </a>
 
-            <!-- Navbar toggle -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Navbar toggle -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+            <!-- Navbar items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#about-us">About us</a>
                     </li>
                     <li class="nav-item">
@@ -101,6 +103,15 @@
             </div>
         </div>
     </nav>
+
+    <!-- Main content -->
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h1>Navbar example</h1>
+            <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+            <a class="btn btn-lg btn-primary" href="/docs/4.2/components/navbar/" role="button">View navbar docs &raquo;</a>
+        </div>
+    </main>
 
     <!-- JavaScript at end of body for optimized loading -->
     <script src="/js/core/jquery.min.js"></script>

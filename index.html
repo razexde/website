@@ -54,6 +54,17 @@
         })});
     </script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54671102-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-54671102-3');
+    </script>
+
+
     <!-- Fonts and icons -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:400,700%7CMaterial+Icons" type="text/css" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" type="text/css" rel="stylesheet" />
@@ -67,7 +78,7 @@
 <body id="page-top">
 
     <!-- Fixed navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg bg-default">
         <div class="container">
             <div class="navbar-translate">
                 <!-- Navbar logo -->
@@ -108,17 +119,49 @@
     </nav>
 
     <!-- Main content -->
-    <div class="jumbotron">
-        <div class="cover"></div>
-        <div class="container">
-            <h1>Free community webhosting</h1>
-            <h3>We provide fast and reliable webhosting, hosted in the middle of Europe.</h3>
+    <div id="main" class="main">
+        <noscript>
+            <div class="no-script">
+                <div class="container">
+                    For full functionality of this site it is necessary to enable JavaScript.
+                    Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.
+                </div>
+            </div>
+        </noscript>
+
+        <div class="jumbotron welcome">
+            <div class="container">
+                <h1 class="font-weight-bold">Free community webhosting</h1>
+                <h3>We provide fast and reliable webhosting, hosted in the middle of Europe.</h3>
+            </div>
+        </div>
+
+        <section class="about" id="about-us">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-4">
+                        <img class="img-fluid text-center h-auto" src="/img/logo.png" alt="Razex.de logo" />
+                    </div>
+                    <div class="col-lg-7 text-left">
+                        <h2 class="title">What is Razex.de?</h2>
+                        <hr>
+                        <p class="description">
+                            Razex.de is a community that is active since 2014 and offers free hosting services for members.
+                            Originally we were founded in Frankfurt am Main in Germany and began as an amateur e-sport group playing in different games.
+                            Since then we had our own community TeamSpeak server, offering private voice channels for everyone.
+                            After we decided to switch to a self-managed linux server, we started providing shared game servers for free.
+                            <br /><br />
+                            Years have passed by and the e-sport group is not existing anymore. 
+                            What was left was the server infrastructure, so we changed the focus and began to mainly offer free webhosting.
+                            Over time we developed into a hosting company which is actually not a company.
+                            <br /><br />
+                            Razex.de is part of Codebucket.de and all related sites, owned by David Sn.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <main role="main" class="container">
-        
-    </main>
 
     <!-- JavaScript at end of body for optimized loading -->
     <script src="/js/core/jquery.min.js"></script>

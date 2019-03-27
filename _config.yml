@@ -1,0 +1,53 @@
+# General options
+url: "https://www.razex.de"
+baseurl: ""
+
+# Localization options
+language: en
+date_format: ordinal
+timezone: Europe/Warsaw
+encoding: "utf-8"
+
+# Site options
+title: "Razex.de"
+description: "Free community webhosting and more"
+author: "David Sn"
+keywords: "Razex.de, Krakow, Poland, Cloud, Productivity, GitHub, Open Source, Hosting"
+copyright: "2014-2019 Razex.de (David Sn)"
+
+# Social media
+social_media:
+  facebook: "razexde"
+  github: "razexde"
+  twitter: "razexde"
+  youtube: "UCBjok-dLb6Xw-DKk5A2153Q"
+  teamspeak: "ts3.razex.de"
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+disqus:
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: "UA-54671102-3"
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+# Plugins we want to use
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap

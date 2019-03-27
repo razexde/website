@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="{{ site.language }}">
+<head>
+    {% include meta.html %}
+
+    {% if page.title %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+    <title>{{ site.title }} – {{ site.description }}</title>
+    {% endif %}
+
+    <!--
+      You enjoy inspecting the sourcecode of my websites?
+      Why do you not follow me on GitHub and review some of my projects?
+      https://github.com/divadsn
+    -->
+
+    {% include favicons.html %}
+    
+    {% include opengraph.html %}
+
+    {% include twitter.html %}
+
+    {% include cookieconsent.html %}
+    
+    {% include google_analytics.html %}
+
+    {% include styles.html %}
+</head>
+<body id="page-top">
+
+    {% include navbar.html %}
+
+    <!-- Main content -->
+    <div id="main" class="main">
+        <noscript>
+            <div class="no-script">
+                <div class="container">
+                    For full functionality of this site it is necessary to enable JavaScript.
+                    Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.
+                </div>
+            </div>
+        </noscript>
+
+        {{ content }}
+
+    </div>
+
+    {% include footer.html %}    
+
+    {% include footer-scripts.html %}
+</body>
+</html>

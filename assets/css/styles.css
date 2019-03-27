@@ -3,7 +3,7 @@ body {
 }
 
 .jumbotron {
-    background: linear-gradient(rgba(20,20,20,0.2), rgba(20,20,20,0.2)), url('/img/cover.jpg') no-repeat center center;
+    background: linear-gradient(rgba(20,20,20,0.2), rgba(20,20,20,0.2)), url('/assets/img/cover.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px;
